@@ -1,0 +1,24 @@
+{
+  "name": "Validated Strategy Baseline",
+  "description": "Walk-Forward validated strategy with Expanding Window normalization",
+  "creation_date": "2025-12-02T22:19:23.246193",
+  "parameters": {
+    "window": 5,
+    "weight": 0.1,
+    "normalization": "expanding_window",
+    "transaction_cost": 0.0001
+  },
+  "performance": {
+    "sharpe_ratio": 4.24164012099301,
+    "annual_return": 0.41510853887721066,
+    "annual_volatility": 0.0978651010072089,
+    "max_drawdown": -0.06113909225344942,
+    "improvement_vs_baseline": 15.788756224891287
+  },
+  "validation": {
+    "method": "Walk-Forward Out-of-Sample",
+    "test_period": "2018-01-03 ~ 2025-01-07",
+    "out_of_sample_sharpe": 4.365,
+    "out_of_sample_improvement": 23.21
+  }
+}

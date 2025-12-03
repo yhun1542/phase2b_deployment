@@ -1,0 +1,32 @@
+{
+  "name": "Momentum-Volatility Hybrid Strategy",
+  "description": "Optimal hybrid combining 5-day momentum (110%) and 10-day volatility (-10%)",
+  "creation_date": "2025-12-02T22:26:54.419274",
+  "parameters": {
+    "momentum_window": 5,
+    "momentum_weight": 1.1,
+    "volatility_window": 10,
+    "volatility_weight": -0.1,
+    "leverage_weight": 0.1,
+    "leverage_range": [
+      0.5,
+      2.0
+    ],
+    "normalization": "expanding_window",
+    "transaction_cost": 0.0001
+  },
+  "performance": {
+    "sharpe_ratio": 4.69527563994283,
+    "annual_return": 0.5140391134879276,
+    "annual_volatility": 0.10948007165223352,
+    "max_drawdown": -0.04969440899735351,
+    "improvement_vs_baseline": 10.694813940123659
+  },
+  "validation": {
+    "method": "Walk-Forward Out-of-Sample",
+    "test_period": "2018-01-03 ~ 2025-01-07",
+    "average_out_of_sample_improvement": 8.33,
+    "signal_correlation": -0.1861,
+    "note": "Low correlation indicates good diversification effect"
+  }
+}

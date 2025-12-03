@@ -1,0 +1,7 @@
+Strategy,Sharpe,Improvement,Annual Return,Annual Volatility,Description
+Hybrid (Vol 12%),3.8335,31.34,40.86,10.66,선형 레버리지 + 동적 변동성 (목표 12%)
+Hybrid (Vol 15%),3.806,30.4,43.04,11.31,선형 레버리지 + 동적 변동성 (목표 15%)
+Linear Leverage (Optimal),3.5844,22.8,46.6,13.0,"40일 스무딩, 레버리지 0.2~2.8, 임계값 10%"
+Dynamic Volatility,3.46,18.54,39.62,11.45,동적 변동성 타겟팅
+Baseline,2.9188,0.0,20.23,6.93,조정 없음
+Tiered Leverage,1.4686,-49.68,15.02,10.23,단계별 레버리지 조정

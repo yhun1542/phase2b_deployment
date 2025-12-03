@@ -1,0 +1,7 @@
+{
+  "macro": 0.05,
+  "sentiment": 0.2,
+  "technical": 0.35,
+  "fundamental": 0.3,
+  "market": 0.10000000000000009
+}
